@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    var count = ""
 
     fun enterValF(str: String){
         if( math_input.text != ""){
@@ -78,7 +79,9 @@ class MainActivity : AppCompatActivity() {
     fun tratsition(view: View){
         val transIntent = Intent(this, SecondActivity::class.java)
         val countString = math_input.text.toString()
-        val count = Integer.parseInt(countString)
+        if (countString!=""){
+        count = countString}
+        else {count = "Немає відповіді"}
         transIntent.putExtra(SecondActivity.total_count, count)
         startActivity(transIntent)
     }

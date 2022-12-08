@@ -16,8 +16,10 @@ class SecondActivity : AppCompatActivity() {
         showResult()
     }
 
-    fun showResult(){
-        val count = intent.getIntExtra(total_count,0)
-        textResult.text = Integer.toString(count)
+    fun showResult() {
+        val count = intent.getStringExtra(total_count)
+
+            textResult.text = count.toString()
+
     }
 }
