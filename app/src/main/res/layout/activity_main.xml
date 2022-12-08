@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0c0c0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/math_op"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_gravity="end"
+        android:ellipsize="start"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/math_input"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:layout_gravity="end"
+        android:ellipsize="end"
+        android:singleLine="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/ButtunOps"
+                android:id="@+id/AllClear_b"
+                android:text="AC"/>
+
+            <TextView
+                style="@style/ButtunOps"
+                android:id="@+id/rs_b"
+                android:text="("/>
+
+            <TextView
+                style="@style/ButtunOps"
+                android:id="@+id/ls_b"
+                android:text=")"/>
+
+            <TextView
+                style="@style/ButtunOps"
+                android:id="@+id/division_b"
+                android:text="/"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/ButtunNums"
+                android:id="@+id/one_b"
+                android:text="1"/>
+
+            <TextView
+                style="@style/ButtunNums"
+                android:id="@+id/two_b"
+                android:text="2"/>
+
+            <TextView
+                style="@style/ButtunNums"
+                android:id="@+id/three_b"
+                android:text="3"/>
+
+            <TextView
+                style="@style/ButtunOps"
+                android:id="@+id/mult_b"
+                android:text="*"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/ButtunNums"
+                android:id="@+id/four_b"
+                android:text="4"/>
+
+            <TextView
+                style="@style/ButtunNums"
+                android:id="@+id/five_b"
+                android:text="5"/>
+
+            <TextView
+                style="@style/ButtunNums"
+                android:id="@+id/six_b"
+                android:text="6"/>
+
+            <TextView
+                style="@style/ButtunOps"
+                android:id="@+id/minus_b"
+                android:text="-"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/ButtunNums"
+                android:id="@+id/seven_b"
+                android:text="7"/>
+
+            <TextView
+                style="@style/ButtunNums"
+                android:id="@+id/eight_b"
+                android:text="8"/>
+
+            <TextView
+                style="@style/ButtunNums"
+                android:id="@+id/nine_b"
+                android:text="9"/>
+
+            <TextView
+                style="@style/ButtunOps"
+                android:id="@+id/plus_b"
+                android:text="+"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/ButtunNums"
+                android:id="@+id/dot_b"
+                android:text="."/>
+
+            <TextView
+                style="@style/ButtunNums"
+                android:id="@+id/null_b"
+                android:text="0"/>
+
+            <TextView
+                style="@style/ButtunOps"
+                android:id="@+id/ClearOne_b"
+                android:text="C"/>
+
+            <TextView
+                style="@style/ButtunOps"
+                android:id="@+id/equal_b"
+                android:text="="/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:onClick="tratsition"
+                style="@style/ButtunOps"
+                android:id="@+id/next_b"
+                android:text="Відповідь"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
